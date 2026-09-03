@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Narayan Mohanta, home">
@@ -31,7 +33,7 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-copy reveal">
+      <div class="hero-copy reveal hero-sequence">
         <p class="eyebrow"><span aria-hidden="true"></span> Open to Python Developer opportunities</p>
         <h1>I build the backend that makes products <em>work.</em></h1>
         <p class="hero-intro">I’m Narayan, a Python & Django backend developer from India. I create REST APIs, authentication flows, and database-driven applications with clean, practical engineering.</p>
@@ -44,7 +46,7 @@
           <a href="https://linkedin.com/in/narayan-mohanta-96a083212" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <aside class="hero-panel reveal" aria-label="Developer profile snapshot">
+      <aside class="hero-panel reveal tilt-card" aria-label="Developer profile snapshot">
         <div class="panel-top">
           <span>developer_profile.py</span>
           <span class="panel-status">available</span>
@@ -72,7 +74,7 @@
         <p>From healthcare access to hiring workflows, I’m focused on useful products with reliable backend foundations.</p>
       </div>
 
-      <article class="featured-project reveal">
+      <article class="featured-project reveal spotlight-card">
         <div class="project-index">01 / FEATURED</div>
         <div class="project-main">
           <div class="project-title-row"><h3>SehatSaathi</h3><span class="status-badge">In development</span></div>
@@ -89,25 +91,25 @@
       </article>
 
       <div class="project-grid">
-        <article class="project-card reveal">
+        <article class="project-card reveal spotlight-card">
           <div class="card-number">02</div>
           <div><p class="project-type">Recruitment platform</p><h3>Candidate Hiring Portal</h3></div>
           <p>A Django hiring workflow combining REST APIs with ML-assisted candidate screening and NLP-based resume processing.</p>
           <ul class="tags"><li>Django</li><li>PostgreSQL</li><li>ML</li><li>NLP</li></ul>
         </article>
-        <article class="project-card reveal">
+        <article class="project-card reveal spotlight-card">
           <div class="card-number">03</div>
           <div><p class="project-type">Local AI application</p><h3>Django AI Chatbot</h3></div>
           <p>A conversation interface backed by Django and a local Ollama model, with persistent threads and API-driven messaging.</p>
           <ul class="tags"><li>Django</li><li>DRF</li><li>Ollama</li><li>JavaScript</li></ul>
         </article>
-        <article class="project-card reveal">
+        <article class="project-card reveal spotlight-card">
           <div class="card-number">04</div>
           <div><p class="project-type">Business operations</p><h3>Employee Management</h3></div>
           <p>A practical employee records system with authentication, CRUD workflows, REST endpoints, and PostgreSQL persistence.</p>
           <ul class="tags"><li>Django</li><li>DRF</li><li>AJAX</li><li>PostgreSQL</li></ul>
         </article>
-        <article class="project-card reveal">
+        <article class="project-card reveal spotlight-card">
           <div class="card-number">05</div>
           <div><p class="project-type">Inventory workflow</p><h3>Library Management</h3></div>
           <p>Book inventory, borrowing rules, search, genre analysis, and administrative controls in a structured Django application.</p>
