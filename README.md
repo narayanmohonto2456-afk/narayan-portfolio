@@ -23,7 +23,7 @@ The portfolio includes links to my GitHub profile, LinkedIn profile, and email s
 
 ### Live Portfolio
 
-https://narayanmohonto2456-afk.github.io/narayan-portfolio/#skills
+https://narayanmohonto2456-afk.github.io/narayan-portfolio/
 
 ### Contact
 
