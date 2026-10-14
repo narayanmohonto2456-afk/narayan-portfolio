@@ -41,3 +41,11 @@ body{overflow-x:hidden}
 @keyframes ringBreathe{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.06)}}
 @media (pointer:coarse){.cursor-glow{display:none}}
 @media (prefers-reduced-motion:reduce){.site-header,.eyebrow span,.visual-grid,.pulse-ring,.hero-sequence.visible>*{animation:none}.scroll-progress{display:none}.hero-panel,.brand-mark{transition:none}}
+.card-link{font-weight:700;font-size:.88rem;text-underline-offset:4px;position:relative;z-index:1;width:max-content;max-width:100%}
+.card-link:hover{color:#267582}
+.route-line{position:absolute;inset:20% 12% 24%;border-left:3px solid var(--cyan);border-bottom:3px solid var(--cyan);border-radius:0 0 0 44px;transform:skewX(-12deg)}
+.route-line::after{content:"";position:absolute;right:-8px;bottom:-8px;width:16px;height:16px;background:var(--lime);border-radius:50%;box-shadow:0 0 0 8px #c8f36a22}
+.route-line span,.route-line i,.route-line b{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 6px #62d9e81f}
+.route-line span{left:-7px;top:-6px}
+.route-line i{left:28%;bottom:-7px}
+.route-line b{left:66%;bottom:-7px}
