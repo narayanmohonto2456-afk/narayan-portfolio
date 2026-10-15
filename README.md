@@ -1,32 +1,27 @@
-## About This Project
+# Narayan Mohanta — Developer Portfolio
 
-This is my personal developer portfolio, created to showcase my skills, projects, education, and career journey to recruiters and potential collaborators.
+A responsive, dependency-free portfolio for entry-level Python backend and applied-AI opportunities. Built with HTML, CSS, and JavaScript.
 
-I am Narayan Mohanta, an aspiring Python and Django Backend Developer from India. I specialize in developing REST APIs, authentication systems, and database-driven web applications using Django, Django REST Framework, and PostgreSQL.
+## Featured work
 
-### Featured Projects
+- Fuel Route API
+- Support Ticket Intelligence API
+- Vehicle & Person Detector
+- Full-stack Local AI Chatbot
+- AI Employee Management System
+- BYdoc (private repository)
+- AI Recruitment Portal
 
-* SehatSaathi healthcare and appointment platform
-* Recruitment and Candidate Hiring Portal
-* Django AI Chatbot powered by Ollama
-* Employee Management System
-* Library Management System
+## Local preview
 
-### Technologies Used
+Run `python -m http.server 8000` from this folder and open http://localhost:8000.
 
-* HTML5
-* CSS3
-* JavaScript
-* Responsive Web Design
+## Deployment
 
-The portfolio includes links to my GitHub profile, LinkedIn profile, and email so recruiters can easily explore my work or contact me.
+GitHub Pages serves `index.html`, `styles.css`, and `script.js` from the repository root. No build step is required.
 
-### Live Portfolio
+Live portfolio: https://narayanmohonto2456-afk.github.io/narayan-portfolio/
 
-https://narayanmohonto2456-afk.github.io/narayan-portfolio/
+## Maintenance
 
-### Contact
-
-* GitHub: https://github.com/narayanmohonto2456-afk
-* LinkedIn: https://linkedin.com/in/narayan-mohanta-96a083212
-* Email: [narayanmohonto2456@gmail.com](mailto:narayanmohonto2456@gmail.com)
+Read `CODEX_HANDOFF.md` before editing. Preserve project links, accurate education details, keyboard access, and reduced-motion support. Use a feature branch for commits.

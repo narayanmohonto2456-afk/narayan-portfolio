@@ -1,5 +1,18 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-links');
+const closeMenu = () => {
+  nav?.classList.remove('open');
+  toggle?.setAttribute('aria-expanded', 'false');
+};
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && nav?.classList.contains('open')) {
+    closeMenu();
+    toggle?.focus();
+  }
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('nav')) closeMenu();
+});
 toggle?.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', String(open));
@@ -10,6 +23,7 @@ nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => 
 }));
 document.getElementById('year').textContent = new Date().getFullYear();
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduced && 'IntersectionObserver' in window) document.documentElement.classList.add('js-motion');
 const progressBar = document.querySelector('.scroll-progress span');
 const updateProgress = () => {
   const max = document.documentElement.scrollHeight - window.innerHeight;
@@ -48,7 +62,7 @@ if (!reduced && window.matchMedia('(pointer: fine)').matches) {
     tilt.style.transform = '';
   });
 }
-if (reduced) {
+if (reduced || !('IntersectionObserver' in window)) {
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
 } else {
   const observer = new IntersectionObserver((entries) => {
